@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MPI Pendidikan Pancasila Kelas X - PKBM Al Mujahidin Pundoha</title>
+<style>
+:root{--red:#b4232f;--gold:#f2c14e;--ink:#202b3c;--muted:#64748b;--paper:#fff;--bg:#f4f6fa;--green:#16794b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Arial,sans-serif}
+header{background:linear-gradient(120deg,#8e1725,#c83c43);color:white;padding:25px 18px;text-align:center}
+header .mark{font-size:42px}header h1{margin:5px 0;font-size:clamp(23px,4vw,34px)}header p{margin:4px}
+.wrap{max-width:1050px;margin:22px auto;padding:0 15px}.layout{display:grid;grid-template-columns:245px 1fr;gap:18px}
+nav,.panel{background:white;border-radius:16px;box-shadow:0 5px 20px #17255412}
+nav{padding:14px;height:max-content;position:sticky;top:12px}nav h3{margin:5px 8px 12px}
+nav button{width:100%;border:0;background:transparent;text-align:left;padding:11px 12px;margin:3px 0;border-radius:9px;color:var(--ink);cursor:pointer;font-size:15px}
+nav button.active,nav button:hover{background:#fff0f0;color:var(--red);font-weight:bold}
+.panel{padding:clamp(18px,3vw,30px);min-height:520px}.screen{display:none}.screen.active{display:block}
+h2{color:var(--red);margin-top:0}h3{margin-bottom:7px}.hero{background:linear-gradient(135deg,#fff4df,#fff);border:1px solid #f4dfae;padding:24px;border-radius:14px}
+.tag{display:inline-block;background:#fff0f0;color:var(--red);padding:4px 10px;border-radius:30px;font-size:13px;font-weight:bold}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:16px 0}
+.card{border:1px solid #e5e7eb;border-radius:12px;padding:15px;background:#fff}
+.symbol{font-size:35px}.btn{border:0;background:var(--red);color:#fff;padding:11px 17px;border-radius:9px;cursor:pointer;font-weight:bold;margin:5px 5px 5px 0}
+.btn.secondary{background:#e9edf4;color:var(--ink)}.btn.gold{background:#e5a900;color:#241b00}
+.callout{background:#f0f7ff;border-left:4px solid #4185c5;padding:13px 16px;border-radius:8px;margin:14px 0}
+.question{padding:15px;border:1px solid #e5e7eb;border-radius:12px;margin:14px 0}
+.option{display:block;padding:9px 11px;border:1px solid #e5e7eb;border-radius:8px;margin:7px 0;cursor:pointer}
+.option:hover{background:#fff8e8}.option input{margin-right:9px}
+.feedback{font-weight:bold;margin-top:9px}.good{color:var(--green)}.bad{color:var(--red)}
+textarea,input[type=text]{width:100%;padding:11px;border:1px solid #cbd5e1;border-radius:9px;font:inherit}
+.progress{height:9px;background:#e5e7eb;border-radius:20px;overflow:hidden;margin:12px 0}.progress span{display:block;height:100%;background:var(--gold);width:0}
+footer{text-align:center;color:var(--muted);padding:22px;font-size:13px}
+@media(max-width:720px){.layout{grid-template-columns:1fr}nav{position:static}nav .navitems{display:grid;grid-template-columns:repeat(2,1fr)}nav button{font-size:13px;padding:9px}}
+</style>
+</head>
+<body>
+<header><div class="mark">🇮🇩</div><h1>AKTUALISASI NILAI-NILAI PANCASILA</h1><p>Dalam Kehidupan Bermasyarakat</p><p><b>Pendidikan Pancasila • Kelas X / Fase E</b></p><p>PKBM AL MUJAHIDIN PUNDOHA | Kurikulum Merdeka</p></header>
+<div class="wrap"><div class="layout">
+<nav><h3>📚 Menu Pembelajaran</h3><div class="navitems">
+<button class="active" data-page="home">🏠 Beranda</button><button data-page="guide">📖 Petunjuk</button>
+<button data-page="intro">💡 Konsep</button><button data-page="five">⭐ Lima Sila</button>
+<button data-page="case">🤝 Studi Kasus</button><button data-page="quiz">📝 Kuis</button>
+<button data-page="reflection">✍️ Refleksi</button><button data-page="result">🏆 Hasil Belajar</button>
+</div></nav>
+<main class="panel">
+<section id="home" class="screen active"><div class="hero"><span class="tag">MEDIA PEMBELAJARAN INTERAKTIF</span><h2>Selamat Datang, Peserta Didik!</h2><p>Mari belajar menerapkan nilai-nilai Pancasila melalui contoh nyata di rumah, lingkungan tempat tinggal, dan masyarakat.</p><button class="btn" onclick="showPage('guide')">Mulai Belajar →</button></div>
+<div class="cards"><div class="card"><div class="symbol">🎯</div><b>Tujuan</b><p>Memahami, mengenali, dan menerapkan nilai Pancasila.</p></div><div class="card"><div class="symbol">🧭</div><b>Alur</b><p>Pelajari materi, kerjakan aktivitas, ikuti kuis, lalu refleksi.</p></div><div class="card"><div class="symbol">🌱</div><b>Pesan</b><p>Pancasila bukan hanya dihafalkan, tetapi diwujudkan dalam tindakan.</p></div></div>
+<h3>Tujuan Pembelajaran</h3><ol><li>Menjelaskan arti aktualisasi nilai-nilai Pancasila dalam kehidupan bermasyarakat.</li><li>Mengidentifikasi perilaku sesuai sila pertama sampai kelima.</li><li>Menganalisis pilihan tindakan dalam situasi sosial berdasarkan Pancasila.</li><li>Menyusun satu komitmen tindakan nyata di lingkungan masing-masing.</li></ol></section>
+<section id="guide" class="screen"><h2>Petunjuk Penggunaan</h2><ol><li>Pilih menu pembelajaran pada bagian kiri atau atas layar.</li><li>Baca materi secara berurutan dan pahami contoh yang diberikan.</li><li>Pada menu Studi Kasus, tentukan tindakan yang paling sesuai dengan Pancasila.</li><li>Kerjakan seluruh soal kuis, lalu tekan tombol <b>Periksa Jawaban</b>.</li><li>Isi refleksi dan komitmen tindakan nyata.</li><li>Buka menu Hasil Belajar untuk melihat skor kuis.</li></ol><div class="callout">💡 <b>Tips:</b> Kerjakan secara mandiri terlebih dahulu. Jika belajar bersama tutor, diskusikan alasan di balik setiap pilihan tindakan.</div><button class="btn" onclick="showPage('intro')">Lanjut ke Materi →</button></section>
+<section id="intro" class="screen"><h2>Apa Itu Aktualisasi Pancasila?</h2><p><b>Aktualisasi nilai-nilai Pancasila</b> adalah proses mewujudkan nilai yang terkandung dalam setiap sila Pancasila ke dalam sikap, perilaku, keputusan, dan tindakan nyata dalam kehidupan sehari-hari.</p><div class="hero"><h3>Mengapa penting?</h3><ul><li>Menciptakan kehidupan masyarakat yang rukun dan damai.</li><li>Menghargai perbedaan suku, agama, budaya, dan pendapat.</li><li>Menumbuhkan kepedulian, keadilan, dan gotong royong.</li><li>Menyelesaikan masalah dengan musyawarah dan tanggung jawab.</li></ul></div><h3>Contoh lingkungan penerapan</h3><div class="cards"><div class="card">🏠 <b>Keluarga</b><p>Menghormati anggota keluarga dan berbagi tugas rumah.</p></div><div class="card">🏘️ <b>Lingkungan</b><p>Ikut kerja bakti dan membantu tetangga.</p></div><div class="card">🏫 <b>PKBM</b><p>Menghargai pendapat teman dan bekerja sama dalam kelompok.</p></div></div><button class="btn" onclick="showPage('five')">Pelajari Lima Sila →</button></section>
+<section id="five" class="screen"><h2>Nilai dan Contoh Aktualisasi Lima Sila</h2><p>Pilih setiap kartu untuk membaca contoh penerapan nilai dalam masyarakat.</p><div class="cards">
+<div class="card"><div class="symbol">⭐</div><h3>Sila 1</h3><b>Ketuhanan Yang Maha Esa</b><p>Menghormati kebebasan orang lain dalam beribadah, tidak memaksakan agama atau kepercayaan, dan menjaga kerukunan antarumat beragama.</p></div>
+<div class="card"><div class="symbol">🔗</div><h3>Sila 2</h3><b>Kemanusiaan yang Adil dan Beradab</b><p>Menolong warga yang membutuhkan, tidak melakukan perundungan, serta memperlakukan setiap orang dengan hormat dan bermartabat.</p></div>
+<div class="card"><div class="symbol">🌳</div><h3>Sila 3</h3><b>Persatuan Indonesia</b><p>Menjaga kerukunan, bekerja sama tanpa membeda-bedakan latar belakang, dan mengutamakan kepentingan bersama.</p></div>
+<div class="card"><div class="symbol">🐂</div><h3>Sila 4</h3><b>Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan</b><p>Menyelesaikan masalah melalui musyawarah, mendengarkan pendapat, dan menerima keputusan bersama dengan tanggung jawab.</p></div>
+<div class="card"><div class="symbol">🌾</div><h3>Sila 5</h3><b>Keadilan Sosial bagi Seluruh Rakyat Indonesia</b><p>Bersikap adil, berbagi kesempatan, melaksanakan kewajiban, dan membantu agar kesejahteraan dapat dirasakan bersama.</p></div>
+</div><div class="callout"><b>Ingat:</b> Satu tindakan dapat mencerminkan lebih dari satu nilai Pancasila. Perhatikan tujuan, cara, dan dampak tindakan tersebut.</div><button class="btn" onclick="showPage('case')">Coba Studi Kasus →</button></section>
+<section id="case" class="screen"><h2>Aktivitas Interaktif: Studi Kasus</h2><div class="hero"><b>Situasi:</b><p>Warga di lingkungan tempat tinggal mengadakan kerja bakti membersihkan lingkungan. Namun, beberapa warga tidak mau bekerja sama karena berbeda pendapat dengan tetangganya. Pada saat yang sama, seorang warga lanjut usia membutuhkan bantuan membersihkan halaman rumahnya.</p></div><h3>Menurutmu, tindakan yang paling tepat adalah …</h3><div id="caseOptions"></div><p id="caseFeedback" class="feedback" aria-live="polite"></p><button class="btn" onclick="checkCase()">Periksa Pilihan</button><button class="btn secondary" onclick="showPage('quiz')">Lanjut ke Kuis →</button></section>
+<section id="quiz" class="screen"><h2>Kuis Pemahaman</h2><p>Pilih satu jawaban yang paling tepat untuk setiap pertanyaan. Skor dihitung otomatis setelah semua jawaban diperiksa.</p><div class="progress"><span id="quizProgress"></span></div><div id="quizQuestions"></div><button class="btn" onclick="gradeQuiz()">Periksa Jawaban</button><p id="quizFeedback" class="feedback" aria-live="polite"></p></section>
+<section id="reflection" class="screen"><h2>Refleksi dan Komitmen Nyata</h2><p>Setelah mempelajari materi, pikirkan tindakan sederhana yang dapat kamu lakukan mulai hari ini.</p><label for="learned"><b>1. Hal penting apa yang kamu pelajari?</b></label><textarea id="learned" rows="3" placeholder="Tuliskan pemahamanmu..."></textarea><br><br><label for="commit"><b>2. Tuliskan satu komitmen tindakan nyata yang akan kamu lakukan di lingkunganmu.</b></label><textarea id="commit" rows="3" placeholder="Contoh: Saya akan ikut kerja bakti dan membantu tetangga yang membutuhkan."></textarea><br><br><button class="btn" onclick="saveReflection()">Simpan Refleksi</button><p id="reflectionFeedback" class="feedback" aria-live="polite"></p></section>
+<section id="result" class="screen"><h2>Hasil Belajar</h2><div class="hero"><div class="symbol">🏆</div><h3 id="scoreText">Kuis belum dikerjakan</h3><p id="scoreDetail">Kerjakan kuis untuk melihat hasil belajarmu.</p></div><h3>Refleksi tersimpan</h3><p id="savedCommit">Belum ada komitmen yang disimpan.</p><button class="btn" onclick="showPage('quiz')">Ulangi Kuis</button><button class="btn secondary" onclick="window.print()">Cetak Hasil / Simpan PDF</button></section>
+</main></div></div><footer>MPI Pendidikan Pancasila Kelas X / Fase E • PKBM Al Mujahidin Pundoha</footer>
+<script>
+const pages=[...document.querySelectorAll('.screen')];
+function showPage(id){pages.forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));window.scrollTo({top:0,behavior:'smooth'});}
+document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+const caseChoices=[
+['Tetap bekerja bakti bersama warga lain, mengajak warga yang berselisih berdialog dengan baik, dan membantu warga lanjut usia.','correct'],
+['Membalas sikap warga yang tidak mau bekerja sama dengan tidak membantu mereka.','wrong'],
+['Membiarkan warga lanjut usia karena bukan tanggung jawab bersama.','wrong'],
+['Membatalkan kerja bakti agar tidak terjadi perbedaan pendapat.','wrong']];
+document.getElementById('caseOptions').innerHTML=caseChoices.map((x,i)=>`<label class="option"><input type="radio" name="case" value="${i}">${String.fromCharCode(65+i)}. ${x[0]}</label>`).join('');
+function checkCase(){let v=document.querySelector('input[name="case"]:checked');let f=document.getElementById('caseFeedback');if(!v){f.textContent='Pilih salah satu jawaban terlebih dahulu.';f.className='feedback bad';return}let ok=caseChoices[+v.value][1]==='correct';f.textContent=ok?'Tepat! Sikap tersebut mencerminkan gotong royong, kemanusiaan, persatuan, dan kepedulian.':'Belum tepat. Pilih tindakan yang mengutamakan dialog, kepedulian, dan kepentingan bersama.';f.className='feedback '+(ok?'good':'bad');}
+const qs=[
+{q:'Apa yang dimaksud dengan aktualisasi nilai-nilai Pancasila?',a:['Menghafalkan bunyi lima sila saja','Mewujudkan nilai Pancasila dalam tindakan nyata','Menggunakan Pancasila hanya saat upacara','Mengutamakan kepentingan pribadi'],c:1,e:'Aktualisasi berarti menerapkan nilai Pancasila dalam sikap dan tindakan sehari-hari.'},
+{q:'Menghormati tetangga yang sedang beribadah merupakan contoh penerapan sila …',a:['Pertama','Kedua','Ketiga','Kelima'],c:0,e:'Sila pertama mengajarkan penghormatan terhadap kehidupan beragama dan kepercayaan.'},
+{q:'Menolong warga lanjut usia tanpa membeda-bedakan latar belakang mencerminkan sila …',a:['Pertama saja','Kedua','Keempat saja','Kelima saja'],c:1,e:'Sila kedua menekankan kemanusiaan, kepedulian, dan perlakuan yang beradab.'},
+{q:'Warga dengan beragam suku bekerja sama membersihkan lingkungan. Hal ini terutama mencerminkan sila …',a:['Pertama','Kedua','Ketiga','Keempat'],c:2,e:'Kerja sama dalam keberagaman memperkuat persatuan Indonesia.'},
+{q:'Ketika warga berbeda pendapat tentang jadwal ronda, sebaiknya mereka …',a:['Memaksakan pendapat ketua','Bertengkar sampai ada yang mengalah','Menghindari pembicaraan','Bermusyawarah untuk mencapai kesepakatan'],c:3,e:'Sila keempat mengutamakan musyawarah dan kebijaksanaan.'},
+{q:'Contoh penerapan sila kelima di masyarakat adalah …',a:['Membagi bantuan secara adil sesuai kebutuhan','Memilih teman berdasarkan kekayaan','Mengutamakan keluarga sendiri dalam semua hal','Menolak berbagi kesempatan'],c:0,e:'Sila kelima mengajarkan keadilan sosial dan kesempatan yang adil.'},
+{q:'Ada tetangga berbeda pendapat dengan kita. Sikap yang sesuai Pancasila adalah …',a:['Menyebarkan kabar buruk tentangnya','Menghormati dan mengajak berdialog','Mengucilkannya dari kegiatan warga','Memaksanya mengikuti pendapat kita'],c:1,e:'Menghargai perbedaan dan berdialog menjaga kemanusiaan serta persatuan.'},
+{q:'Mengapa gotong royong penting dalam kehidupan bermasyarakat?',a:['Agar pekerjaan menjadi tanggung jawab satu orang','Agar warga saling bersaing','Untuk memperkuat kepedulian dan kebersamaan','Supaya warga tidak perlu bermusyawarah'],c:2,e:'Gotong royong menumbuhkan solidaritas dan menyelesaikan kebutuhan bersama.'},
+{q:'Saat keputusan musyawarah tidak sesuai keinginan pribadi, kita sebaiknya …',a:['Menolak tanpa alasan','Menerima dan melaksanakan dengan tanggung jawab','Mengajak orang lain melanggar keputusan','Tidak lagi ikut kegiatan warga'],c:1,e:'Hasil musyawarah perlu dihormati dan dijalankan dengan tanggung jawab.'},
+{q:'Manakah komitmen yang paling nyata untuk mengaktualisasikan Pancasila?',a:['Hanya menghafalkan lima sila','Menunggu orang lain berbuat baik','Menghindari semua kegiatan masyarakat','Ikut kerja bakti dan menghormati perbedaan'],c:3,e:'Komitmen nyata berupa tindakan yang dapat dilakukan dan diamati dalam kehidupan sehari-hari.'}
+];
+let lastScore=null;
+document.getElementById('quizQuestions').innerHTML=qs.map((q,i)=>`<div class="question"><b>${i+1}. ${q.q}</b>${q.a.map((a,j)=>`<label class="option"><input type="radio" name="q${i}" value="${j}">${String.fromCharCode(65+j)}. ${a}</label>`).join('')}<div id="exp${i}" class="feedback"></div></div>`).join('');
+document.querySelectorAll('#quizQuestions input').forEach(x=>x.addEventListener('change',()=>{let n=document.querySelectorAll('#quizQuestions input:checked').length;document.getElementById('quizProgress').style.width=(n/qs.length*100)+'%'}));
+function gradeQuiz(){let answered=qs.filter((q,i)=>document.querySelector(`input[name="q${i}"]:checked`)).length;if(answered<qs.length){document.getElementById('quizFeedback').textContent=`Lengkapi semua soal terlebih dahulu. Baru terjawab ${answered} dari ${qs.length}.`;document.getElementById('quizFeedback').className='feedback bad';return}
+let score=0;qs.forEach((q,i)=>{let v=+document.querySelector(`input[name="q${i}"]:checked`).value;let ok=v===q.c;if(ok)score++;let e=document.getElementById('exp'+i);e.textContent=(ok?'Benar. ':'Belum tepat. ')+q.e;e.className='feedback '+(ok?'good':'bad')});lastScore=score*10;document.getElementById('quizFeedback').textContent=`Skor kamu: ${lastScore} dari 100 (${score} benar dari ${qs.length} soal).`;document.getElementById('quizFeedback').className='feedback '+(lastScore>=70?'good':'bad');document.getElementById('scoreText').textContent=`Nilai Kuis: ${lastScore}/100`;document.getElementById('scoreDetail').textContent=`Jawaban benar ${score} dari ${qs.length} soal. ${lastScore>=70?'Bagus! Terus praktikkan nilai Pancasila.':'Ayo pelajari kembali materi dan coba lagi.'}`;}
+function saveReflection(){let c=document.getElementById('commit').value.trim(),l=document.getElementById('learned').value.trim(),f=document.getElementById('reflectionFeedback');if(!c||!l){f.textContent='Mohon isi kedua bagian refleksi.';f.className='feedback bad';return}document.getElementById('savedCommit').textContent=c;f.textContent='Refleksi berhasil ditampilkan pada menu Hasil Belajar.';f.className='feedback good';}
+</script></body></html>
